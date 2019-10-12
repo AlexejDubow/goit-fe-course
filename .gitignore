@@ -61,3 +61,7 @@ typings/
 .next
 
 *.psd
+
+*.~lock.*.psd#
+
+
