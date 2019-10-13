@@ -1,0 +1,16 @@
+body {
+  font-family: 'Playfair Display', serif;
+}
+ul {
+  font-size: 14px;
+}
+h2 {
+  font-size: 30px;
+}
+h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+}
+.cards-control {
+  font-size: 14px;
+}
