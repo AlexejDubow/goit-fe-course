@@ -63,5 +63,6 @@ typings/
 *.psd
 
 *.~lock.*.psd#
+*.vscode
 
 
