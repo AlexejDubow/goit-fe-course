@@ -116,10 +116,18 @@ body {
 .wrapper-item:nth-of-type(-n+4) {
   margin-bottom: 30px;
 }
+.wrapper-img {
+  height: 282px;
+  overflow: hidden;
+  line-height: 282px;
+  text-align: center;
+}
 .wrapper-item img {
   min-width: 255px;
-  max-height: 322px;
-  display: block;
+  height: auto;
+  vertical-align: middle;
+  /* max-height: 322px; */
+  /* display: block; */
 }
 .item-price {
   margin: 0 auto;
