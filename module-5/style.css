@@ -87,7 +87,6 @@ html {
 
 .container-fluid {
   min-height: 600px;
-  outline: 1px solid red;
   background-image: url(img/slider/slide4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,7 +98,6 @@ html {
   max-width: 1110px;
   margin: auto;
   min-height: 600px;
-  outline: 1px solid red;
 }
 .slider-discription {
   position: absolute;
@@ -175,7 +173,6 @@ html {
 
 .new-collection {
   min-height: 676px;
-  outline: 1px solid red;
   margin: 0;
   padding: 100px 0;
   background-color: #e9f0fd;
