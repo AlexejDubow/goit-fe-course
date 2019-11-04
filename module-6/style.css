@@ -1,0 +1,442 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.menu-list,
+.card,
+.team-cards,
+.team-card-menu-item {
+  list-style: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 100px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #95e1d3;
+}
+.header-title {
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  width: 490px;
+}
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-item {
+  min-width: 50px;
+  position: relative;
+}
+.menu-item-link:hover::after {
+  content: '';
+  display: table;
+  /* display: none; */
+  width: 50px;
+  height: 3px;
+  background-color: #f38181;
+  margin: 12px auto;
+  padding: 0;
+  position: absolute;
+/* transition-property: display;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  transition-delay: .5s; */
+}
+
+/* .menu-item-link:hover .menu-item-link:hover::after (
+  dispaly: table;
+) */
+
+.menu-item-link {
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  transition-delay: .5s;
+}
+.menu-item-link:hover,
+.menu-item-link:focus {
+  color: #f38181;
+}
+.header-title:hover,
+.menu-item-link:hover {
+  cursor: pointer;
+}
+.services {
+  max-width: 1200px;
+  min-height: 530px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.services-sup-title {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  line-height: 30px;
+  color: #333333;
+}
+.services-title {
+  margin: 0 auto;
+  padding: 0 0 46px 0;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Montserrat";
+  font-size: 30px;
+  line-height: 70px;
+  /* увеличил line-height с 44 до 70 для отступа как на макете (вместо margin) */
+  color: #333333;
+  text-transform: uppercase;
+}
+.services-title::after {
+  content: '';
+  display: table;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin: 0 auto;
+  padding: 0;
+}
+.services-sub-title {
+  margin: 0 auto 94px;
+  padding: 0;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 18px;
+  color: #999999;
+}
+.cards {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-between;
+}
+.card {
+  padding: 0 0 0 84px;
+  width: 400px;
+  min-height: 82px;
+  position: relative;
+}
+.card-title {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+.card:nth-of-type(1)::before {
+  content: '';
+  display: table;
+  background-image: url(img/icons/photography.png);
+  position: absolute;
+  width: 32px;
+  height: 31px;
+  left: 26px;
+  top: 0;
+}
+.card:nth-of-type(2)::before {
+  content: '';
+  display: table;
+  background-image: url(img/icons/web-design.png);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 26px;
+  top: 0;
+}
+.card:nth-of-type(3)::before {
+  content: '';
+  display: table;
+  background-image: url(img/icons/creativity.png);
+  position: absolute;
+  width: 32px;
+  height: 28px;
+  left: 26px;
+  top: 0;
+}
+.card:nth-of-type(4)::before {
+  content: '';
+  display: table;
+  background-image: url(img/icons/seo.png);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 26px;
+  top: 0;
+}
+.card:nth-of-type(5)::before {
+  content: '';
+  display: table;
+  background-image: url(img/icons/html-css.png);
+  position: absolute;
+  width: 32px;
+  height: 31px;
+  left: 26px;
+  top: 0;
+}
+.card:nth-of-type(6)::before {
+  content: '';
+  display: table;
+  background-image: url(img/icons/digital.png);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 26px;
+  top: 0;
+}
+
+.team {
+  max-width: 1200px;
+  min-height: 530px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.team-sup-title {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  line-height: 30px;
+  color: #333333;
+}
+.team-title {
+  margin: 0 auto;
+  padding: 0 0 46px 0;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Montserrat";
+  font-size: 30px;
+  line-height: 70px;
+  /* увеличил line-height с 44 до 70 для отступа как на макете (вместо margin) */
+  color: #333333;
+  text-transform: uppercase;
+}
+.team-title::after {
+  content: '';
+  display: table;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin: 0 auto;
+  padding: 0;
+}
+.team-sub-title {
+  margin: 0 auto 94px;
+  padding: 0;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 18px;
+  color: #999999;
+}
+.team-cards {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.team-card {
+  padding: 0;
+  width: 380px;
+  font-size: 0;
+  position: relative;
+}
+.team-card-background {
+  width: 380px;
+  height: 470px;
+  background-color: #95e1d3;
+}
+.team-card-img {
+  width: 380px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition-property: top, left;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  transition-delay: .5s;
+}
+.team-card-background::after {
+  content: '';
+  display: table;
+  width: 380px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, rgba(239, 141, 138,.8), rgba(239, 214, 137,.8));
+  box-shadow: inset 0 0 20px 5px rgba(255,255,255,.9);
+  z-index: 1;
+  transition-property: z-index, top, left;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  transition-delay: .5s;
+}
+.team-card-menu {
+  padding: 0;
+  margin: 0;
+  width: 380px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  left: 58px;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+  transition-property: z-index;
+  transition-duration: 190ms;
+  transition-timing-function: linear;
+  transition-delay: .5s;
+}
+.team-card:hover .team-card-menu,
+.team-card:hover .team-card-background::after {
+  z-index: 10;
+}
+.team-card:hover .team-card-img,
+.team-card:hover .team-card-background::after {
+  left: -12px;
+  top: -12px;
+}
+.team-card-menu-item {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #fce38a;
+  border: 1px solid #f9bd87;
+  text-align: center;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  transition-delay: .5s;
+}
+.team-card-menu-item:hover {
+  background-color: #95e1d3;
+  cursor: pointer;
+}
+.team-card-menu-background {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.team-card-menu-img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+.team-card-title {
+  margin: 0;
+  padding: 30px 0 0 0;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+.team-card-profession {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 48px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+  text-align: center;
+}
+.footer {
+  max-width: 1200px;
+  min-height: 64px;
+  margin: 0 auto;
+  padding: 12px 0;
+  border-top: 1px solid #999999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+.footer-text {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+.footer-text-span {
+  color: #f38181;
+}
+.footer-form {
+  min-width: 390px;
+}
+.footer-form-input {
+  background-color: #fff;
+  width: 230px;
+  height: 40px;
+  border: 1px solid #c7c1c1;
+  border-right: none;
+  padding: 0 10px;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 48px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+  text-align: left;
+}
+.footer-form-button {
+  padding: 0;
+  margin: 0;
+  background-color: #95e1d3;
+  width: 150px;
+  height: 40px;
+  border: none;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer-form-button:hover {
+  cursor: pointer;
+}
