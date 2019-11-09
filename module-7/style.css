@@ -163,13 +163,16 @@ html {
   text-align: center;
 }
 .footer {
-  background-color: #222222;
   min-height: 676px;
+  background-color: #222222;
   margin: 0;
   padding: 100px 0;
-  background-image: url(image/img/Map_Image.png);
+  background-image: url(image/img/Map_Image_Full.png);
   background-repeat: no-repeat;
-  background-position: 90% 80%;
+  background-position: center;
+  /* background-image: url(image/img/Map_Image.png); */
+  /* background-position: right bottom; */
+  /* background-color: #222222; */
 }
 .form {
   padding: 0;
