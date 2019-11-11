@@ -69,7 +69,7 @@ html {
 
 .menu-link {
   /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #000000;
@@ -92,7 +92,7 @@ html {
   text-align: center;
   color: #222222;
   /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Montserrat';
+  font-family: 'Montserrat',sans-serif;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -103,7 +103,7 @@ html {
   margin: 0 auto;
   text-align: center;
   color: #777777;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', serif;
   font-size: 16px;
   font-style: italic;
 }
@@ -120,7 +120,7 @@ html {
 }
 .card-title {
   color: #222222;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.45px;
@@ -156,7 +156,7 @@ html {
 }
 .card-text {
   color: #777777;
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.35px;
@@ -166,22 +166,32 @@ html {
   min-height: 676px;
   background-color: #222222;
   margin: 0;
-  padding: 100px 0;
-  background-image: url(image/img/Map_Image_Full.png);
+  padding: 100px 20px;
+  /* background-image: url(image/img/Map_Image_Full.png);
   background-repeat: no-repeat;
-  background-position: center;
-  /* background-image: url(image/img/Map_Image.png); */
-  /* background-position: right bottom; */
-  /* background-color: #222222; */
+  background-position: center; */
+  background-image: url(image/img/Map_Image.png);
+  /* background-position: 50% bottom; */
+  background-position-x: 56vw;
+  background-position-y: 14vh;
+  background-repeat: no-repeat;
+  background-size: auto;
+  /* background-attachment: fixed; */
+  background-origin: border-box;
+  background-clip: padding-box;
 }
 .form {
   padding: 0;
   margin: 0 auto;
   max-width: 940px;
+  /* background-image: url(image/img/Map_Image.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto; */
 }
 .form-title {
   color: #ffffff;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -192,7 +202,7 @@ html {
 }
 .form-discription {
   color: #777777;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   font-style: italic;
   text-align: center;
@@ -202,43 +212,52 @@ html {
 .form-data {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
   padding-bottom: 30px;
 }
 .form-user-data {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+  align-items: flex-start;
+  width: 450px;
+  margin: 0 0 14px 0;
 }
 .user-data {
   display: block;
-  min-width: 450px;
+  width: 450px;
   padding: 20px;
-  margin: 0;
+  /* margin: 14px 0; */
   background-color: #ffffff;
   color: #bbbbbb;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat',sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.35px;
-  outline: 2px solid #008000;
+  /* outline: 2px solid #008000; */
+}
+.user-data:nth-of-type(2) {
+  margin: 14px 0;
 }
 .user-text {
-  min-width: 450px;
+  width: 450px;
+  margin: 0 0 14px 0;
   padding: 20px;
   background-color: #ffffff;
   color: #bbbbbb;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat',sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.35px;
-  outline: 2px solid #008000;
+  /* outline: 2px solid #008000; */
 }
 .button-submit {
   display: block;
   color: #ffffff;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat',sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -247,7 +266,36 @@ html {
   background-color: #fed136;
   cursor: pointer;
 }
-.user-data:invalid,
+/* .user-data:invalid,
 .user-text:invalid {
   outline: 2px solid #ff0000;
+} */
+
+input[name="user_name"]:focus:invalid,
+input[type="email"]:focus:invalid,
+textarea[name="message"]:focus:invalid {
+  outline-color: red;
+  background-color: rgba(233, 153, 153, 0.9);
+  transition: outline-color, background-color 5s;
 }
+input[name="user_name"]:focus:valid,
+input[type="email"]:focus:valid,
+textarea[name="message"]:focus:valid {
+  outline-color: green;
+  background-color: rgba(191, 253, 191, 0.9);
+  transition: outline-color, background-color .5s;
+}
+/* .user-data input[name="user_name"]:focus:invalid,
+.user-data input[type="email"]:focus:invalid,
+.user-text textarea[name="message"]:focus:invalid {
+  outline-color: red;
+  background-color: rgba(233, 153, 153, 0.9);
+  transition: outline-color, background-color 5s;
+}
+.user-data input[name="user_name"]:focus:valid,
+.user-data input[type="email"]:focus:valid,
+.user-text textarea[name="message"]:focus:valid {
+  outline-color: green;
+  background-color: rgba(191, 253, 191, 0.9);
+  transition: outline-color, background-color .s;
+} */
