@@ -1,0 +1,232 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.header {
+  background-image: url(image/img/bgi.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.header-wrapper {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 10px 10px 138px 10px;
+}
+.wrapper-button {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 97px 0;
+  padding: 0;
+}
+.log-in,
+.sign-up {
+  margin: 5px;
+  padding: 0;
+  color: #ffffff;
+  /* color: red; */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  width: 90px;
+  height: 36px;
+  border: 2px solid #ffffff;
+  /* border: 2px solid red; */
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.logo {
+  margin: 0;
+  padding: 18px 0;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.header-title {
+  margin: 0 auto;
+  padding: 20px 0;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header-title-description {
+  margin: 0 auto;
+  width: 217px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+}
+.header-button, 
+.main-button {
+  display: block;
+  width: 280px;
+  height: 40px;
+  margin: 20px auto;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+}
+.header-button {
+  background-color: #ff4e50;
+}
+.main-button {
+  color: #ff4e50;
+  border: 2px solid #ff4e50;
+  background-color: #ffffff;
+}
+.main {
+  margin: 0 auto;
+  padding: 70px 10px 57px;
+  width: 320px;
+}
+.main-title {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 15px;
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+}
+.cart {
+  width: 220px;
+  margin: 0 auto;
+  position: relative;
+}
+.cart-wrapper-img {
+  margin: 0 auto;
+  width: 121px;
+  height: 121px;
+  border-radius: 50%;
+}
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.cart-wrapper-img::before {
+  content: '';
+  display: table;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+.cart:nth-of-type(1) .cart-wrapper-img::before {
+  content: url(image/icon/tv_icon.svg);
+  top: 38%;
+  right: 28%;
+}
+.cart:nth-of-type(2) .cart-wrapper-img::before {
+  content: url(image/icon/flask_icon.svg);
+  top: 38%;
+  right: 28%;
+}
+.cart:nth-of-type(3) .cart-wrapper-img::before {
+  content: url(image/icon/cap_icon.svg);
+  top: 38%;
+  right: 28%;
+}
+.cart:nth-of-type(4) .cart-wrapper-img::before {
+  content: url(image/icon/letter_icon.svg);
+  top: 38%;
+  right: 28%;
+}
+
+.cart-title {
+  margin: 0 auto;
+  padding: 20px 0 16px 0;
+  color: #333333;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+}
+.cart-descritpion {
+  color: #666666;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+.header {
+  background-image: url(image/img/bgi_tablet.png);
+}
+.header-wrapper {
+  width: 664px;
+  position: relative;
+}
+.wrapper-button {
+  justify-content: end;
+}
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 0;
+}
+.header-title {
+  width: 504px;
+  font-size: 52px;
+}
+.header-title-description {
+  font-size: 24px;
+  width: 404px;
+}
+.main {
+  width: 664px;
+}
+.main-title {
+  font-size: 22px;
+}
+.carts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 600px;
+}
+.main-button {
+  margin-top: 40px;
+}
+}
+
+@media (min-width: 966px) {
+  .header {
+    background-image: url(image/img/bgi_desktop.png);
+  }
+  .header-wrapper {
+    width: 940px;
+  }
+  .main {
+    width: 940px;
+  }
+  .carts {
+    width: 940px;
+  }
+  }
+
