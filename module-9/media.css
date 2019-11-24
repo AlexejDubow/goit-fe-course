@@ -1,0 +1,37 @@
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url(image/img/bgi_tablet.png);
+  }
+  .header-nav {
+    min-width: 664px;
+  }
+  .header-logo {
+    margin-top: 24px;
+  }
+  .header-title {
+    font-size: 52px;
+    width: 520px;
+  }
+  .header-title-description {
+    font-size: 24px;
+  }
+  .main-title {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+  .cart {
+    min-width: 220px;
+  }
+}
+@media (min-width: 966px) {
+  .header {
+    background-image: url(image/img/bgi_desktop.png);
+  }
+  .header-nav {
+    min-width: 940px;
+  }
+  .main {
+    /* min-width: 940px; */
+  }
+}
