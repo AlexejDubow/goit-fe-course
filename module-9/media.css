@@ -8,6 +8,7 @@
   }
   .header-logo {
     margin-top: 24px;
+    text-align: left;
   }
   .header-title {
     font-size: 52px;
@@ -15,6 +16,7 @@
   }
   .header-title-description {
     font-size: 24px;
+    width: 520px;
   }
   .main-title {
     font-size: 22px;
@@ -28,10 +30,9 @@
   .header {
     background-image: url(image/img/bgi_desktop.png);
   }
-  .header-nav {
-    min-width: 940px;
-  }
+  .header-nav,
+  .header-text,
   .main {
-    /* min-width: 940px; */
+    min-width: 940px;
   }
 }
