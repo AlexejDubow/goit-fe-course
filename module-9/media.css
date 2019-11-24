@@ -33,6 +33,13 @@
   .header-nav,
   .header-text,
   .main {
+    min-width: 720px;
+  }
+}
+@media (min-width: 990px) {
+  .header-nav,
+  .header-text,
+  .main {
     min-width: 940px;
   }
 }
