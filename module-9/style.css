@@ -13,12 +13,14 @@ html {
   background-position: top;
 }
 .header-nav {
-  min-width: 300px;
+  width: 300px;
   padding-bottom: 25px;
+  margin: 0 auto;
 }
 .header-text {
   min-width: 300px;
   padding-bottom: 138px;
+  margin: 0 auto;
 }
 .nav-button {
   margin-bottom: 115px;
@@ -59,7 +61,7 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 auto;
-  width: 300px;
+  min-width: 300px;
 }
 .header-title-description {
   color: #ffffff;
@@ -67,7 +69,7 @@ html {
   font-size: 18px;
   font-weight: 300;
   margin: 40px auto;
-  width: 250px;
+  min-width: 250px;
 }
 .header-button, 
 .main-button {
@@ -97,7 +99,7 @@ html {
 .main {
   margin: 0 auto;
   padding: 70px 0 57px;
-  min-width: 300px;
+  width: 300px;
 }
 .main-title {
   margin: 0 auto;

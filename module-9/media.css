@@ -3,8 +3,9 @@
   .header {
     background-image: url(image/img/bgi_tablet.png);
   }
+  
   .header-nav {
-    min-width: 664px;
+    width: 740px;
   }
   .header-logo {
     margin-top: 24px;
@@ -12,11 +13,14 @@
   }
   .header-title {
     font-size: 52px;
-    width: 520px;
   }
   .header-title-description {
     font-size: 24px;
-    width: 520px;
+  }
+  .main,
+  .header-title,
+  .header-text {
+    width: 550px;
   }
   .main-title {
     font-size: 22px;
@@ -26,20 +30,13 @@
     min-width: 220px;
   }
 }
-@media (min-width: 966px) {
+@media (min-width: 960px) {
   .header {
     background-image: url(image/img/bgi_desktop.png);
   }
   .header-nav,
   .header-text,
   .main {
-    min-width: 720px;
-  }
-}
-@media (min-width: 990px) {
-  .header-nav,
-  .header-text,
-  .main {
-    min-width: 940px;
+    width: 940px;
   }
 }
