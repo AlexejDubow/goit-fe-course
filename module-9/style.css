@@ -136,16 +136,16 @@ html {
   bottom: 0;
   right: 0;
 }
-.cart:nth-of-type(2) .icon {
+.cart:first-of-type .icon {
   content: url(image/icon/tv_icon.svg);
 }
-.cart:nth-of-type(3) .icon {
+.cart:nth-of-type(2) .icon {
   content: url(image/icon/flask_icon.svg);
 }
-.cart:nth-of-type(4) .icon {
+.cart:nth-of-type(3) .icon {
   content: url(image/icon/cap_icon.svg);
 }
-.cart:nth-of-type(5) .icon {
+.cart:last-of-type .icon {
   content: url(image/icon/letter_icon.svg);
 }
 
