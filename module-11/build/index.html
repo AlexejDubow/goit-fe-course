@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Placeholder title</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7cMontserrat:400,700%7cRoboto:300,400&display=swap" rel="stylesheet">
+    <title>Module-11</title>
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
     <link rel="stylesheet" href="css/styles.css">
@@ -16,241 +17,244 @@
     <!-- inject:js -->
     <!-- endinject -->
     <header class="header">
-      <div class="header__wrapper container">
-        <div class="header-nav__wrapper">
+      <div class="container">
+        <div class="menu__wrapper">
           <a class="link" href="#">
-            <img class="header__logo"
-              srcset="image/logo/MoGo.png 86w, image/logo/Mogo@2x.png 172w"
+            <img
+              srcset="images/logo/MoGo.png 86w, images/logo/Mogo@2x.png 172w"
               sizes="86px"
-              src="image/logo/MoGo.png"
+              src="images/logo/MoGo.png"
               alt="Logo"
               height=23>
           </a>
-          <nav class="header__nav">
-            <ul class="header__menu">
-              <li class="header__menu-item list">
-                <a href="#" class="header__menu-link link text">About</a>
+          <nav class="menu">
+            <ul class="menu__list list">
+              <li class="menu__item">
+                <a href="#" class="menu__link link">About</a>
               </li>
-              <li class="header__menu-item list">
-                <a href="#" class="header__menu-link link text">Service</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link link">Service</a>
               </li>
-              <li class="header__menu-item list">
-                <a href="#" class="header__menu-link link text">Work</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link link">Work</a>
               </li>
-              <li class="header__menu-item list">
-                <a href="#" class="header__menu-link link text">Blog</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link link">Blog</a>
               </li>
-              <li class="header__menu-item list">
-                <a href="#" class="header__menu-link link text">Contact</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link link">Contact</a>
               </li>
-              <li class="header__menu-item list">
-                <a href="#" class="header__menu-link link text menu__icon-1">
+              <li class="menu__item">
+                <a href="#" class="menu__link link">
                   <svg width="18" height="15">
-                    <use href="image/icon/menu-icon_1.svg#basket"/>
+                    <use href="images/icon/menu-icon_1.svg#basket"/>
                   </svg>
                 </a>
               </li>
-              <li class="header__menu-item list">
-                <a href="#" class="header__menu-link link text menu__icon-2">
+              <li class="menu__item">
+                <a href="#" class="menu__link link">
                   <svg width="18" height="18">
-                    <use href="image/icon/menu-icon_2.svg#search"/>
+                    <use href="images/icon/menu-icon_2.svg#search"/>
                   </svg>
                 </a>
               </li>
             </ul>
           </nav>
         </div>
-        <h3 class="header__suptitle">Creative Template</h3>
-        <h2 class="header__title">Welcome <br> to MoGo</h2>
-        <button class="header__button text">Learn more</button>
+        <h3 class="page__suptitle">Creative Template</h3>
+        <h2 class="page__title">Welcome <br> to MoGo</h2>
+        <button class="page__button">Learn more</button>
       </div>
     </header>
 
-    <main class="main container">
-      <section class="section services">
-        <h4 class="main__suptitle">We work with</h4>
-        <h2 class="main__title">Amazing Services</h2>
-        <ul class="services__cards">
-          <li class="list services__card card__icon--1">
-            <h4 class="text services__card--title">Photography</h4>
-            <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+    <main class="main">
+      <section class="services container">
+        <h4 class="services__suptitle">We work with</h4>
+        <h2 class="services__title">Amazing Services</h2>
+        <ul class="services__cards list">
+          <li class="services__card card__icon--1">
+            <h4 class="services__card--title">Photography</h4>
+            <p class="services__card--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </li>
-          <li class="list services__card card__icon--2">
-            <h4 class="text services__card--title">Web Design</h4>
-            <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <li class="services__card card__icon--2">
+            <h4 class="services__card--title">Web Design</h4>
+            <p class="services__card--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </li>
-          <li class="list services__card card__icon--3">
-            <h4 class="text services__card--title">Creativity</h4>
-            <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <li class="services__card card__icon--3">
+            <h4 class="services__card--title">Creativity</h4>
+            <p class="services__card--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </li>
-          <li class="list services__card card__icon--4">
-            <h4 class="text services__card--title">SEO</h4>
-            <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <li class="services__card card__icon--4">
+            <h4 class="services__card--title">SEO</h4>
+            <p class="services__card--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </li>
-          <li class="list services__card card__icon--5">
-            <h4 class="text services__card--title">Css/Html</h4>
-            <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <li class="services__card card__icon--5">
+            <h4 class="services__card--title">Css/Html</h4>
+            <p class="services__card--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </li>
-          <li class="list services__card card__icon--6">
-            <h4 class="text services__card--title">Digital</h4>
-            <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          </li>
-        </ul>
-      </section>
-      <section class="section team">
-        <h4 class="main__suptitle">Who we are</h4>
-        <h2 class="main__title">Meet our team</h2>
-        <p class="team__text main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <ul class="team__cards">
-          <li class="list team__card">
-            <div class="team__wrapper-img">
-              <img
-              srcset="image/img/Team_1.jpg 380w, image/img/Team_1@2x.jpg 760w"
-              sizes="380px"
-              src="image/img/Team_1.jpg"
-              alt="image"
-              height=470>
-            </div>
-            <ul class="team__menu">
-
-              <li class="team__menu-item list">
-              <a class="social-link" href="#">
-                <svg>
-                  <use href="image/icon/social_icons/spite.svg#icon-facebook"/>
-                </svg>
-              </a>
-              </li>
-
-              <li class="team__menu-item list">
-                <a class="social-link" href="#">
-                  <svg>
-                    <use href="image/icon/social_icons/spite.svg#icon-twitter" />
-                  </svg>
-                </a>
-              </li>
-
-              <li class="team__menu-item list">
-                <a class="social-link" href="#">
-                  <svg>
-                    <use href="image/icon/social_icons/spite.svg#icon-pinterest" />
-                  </svg>
-                </a>
-              </li>
-
-              <li class="team__menu-item list">
-                <a class="social-link" href="#">
-                  <svg>
-                    <use href="image/icon/social_icons/spite.svg#icon-instagram" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <span class="text team__card--name">Matthew Dix</span><br>
-            <span class="main__text team__card--profession">Graphic Design</span>
-          </li>
-          <li class="list team__card">
-            <div class="team__wrapper-img">
-              <img
-              srcset="image/img/Team_2.jpg 380w, image/img/Team_2@2x.jpg 760w"
-              sizes="380px"
-              src="image/img/Team_2.jpg"
-              alt="image"
-              height=470>
-            </div>
-            <ul class="team__menu">
-
-              <li class="team__menu-item list">
-              <a class="social-link" href="#">
-                <svg>
-                  <use href="image/icon/social_icons/spite.svg#icon-facebook"/>
-                </svg>
-              </a>
-              </li>
-
-              <li class="team__menu-item list">
-                <a class="social-link" href="#">
-                  <svg>
-                    <use href="image/icon/social_icons/spite.svg#icon-twitter" />
-                  </svg>
-                </a>
-              </li>
-
-              <li class="team__menu-item list">
-                <a class="social-link" href="#">
-                  <svg>
-                    <use href="image/icon/social_icons/spite.svg#icon-pinterest" />
-                  </svg>
-                </a>
-              </li>
-
-              <li class="team__menu-item list">
-                <a class="social-link" href="#">
-                  <svg>
-                    <use href="image/icon/social_icons/spite.svg#icon-instagram" />
-                  </svg>
-                </a>
-              </li>
-
-            </ul>
-            <span class="text team__card--name">Christopher Campbell</span><br>
-            <span class="main__text team__card--profession">Branding/UX design</span>
-          </li>
-          <li class="list team__card">
-            <div class="team__wrapper-img">
-              <img
-              srcset="image/img/Team_3.jpg 380w, image/img/Team_3@2x.jpg 760w"
-              sizes="380px"
-              src="image/img/Team_3.jpg"
-              alt="image"
-              height=470>
-            </div>
-            <ul class="team__menu">
-
-              <li class="team__menu-item list">
-              <a class="social-link" href="#">
-                <svg>
-                  <use href="image/icon/social_icons/spite.svg#icon-facebook"/>
-                </svg>
-              </a>
-              </li>
-
-              <li class="team__menu-item list">
-                <a class="social-link" href="#">
-                  <svg>
-                    <use href="image/icon/social_icons/spite.svg#icon-twitter" />
-                  </svg>
-                </a>
-              </li>
-
-              <li class="team__menu-item list">
-                <a class="social-link" href="#">
-                  <svg>
-                    <use href="image/icon/social_icons/spite.svg#icon-pinterest" />
-                  </svg>
-                </a>
-              </li>
-
-              <li class="team__menu-item list">
-                <a class="social-link" href="#">
-                  <svg>
-                    <use href="image/icon/social_icons/spite.svg#icon-instagram" />
-                  </svg>
-                </a>
-              </li>
-
-            </ul>
-            <span class="text team__card--name">Michael Fertig </span><br>
-            <span class="main__text team__card--profession">Branding/UX design</span>
+          <li class="services__card card__icon--6">
+            <h4 class="services__card--title">Digital</h4>
+            <p class="services__card--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </li>
         </ul>
       </section>
+
+      <section class="team container">
+        <h4 class="team__suptitle">Who we are</h4>
+        <h2 class="team__title">Meet our team</h2>
+        <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <ul class="team__cards list">
+          <li class="team__card">
+            <div class="team__wrapper-img">
+              <img
+              srcset="images/img/Team_1.jpg 380w, images/img/Team_1@2x.jpg 760w"
+              sizes="380px"
+              src="images/img/Team_1.jpg"
+              alt="image"
+              height=470>
+            </div>
+
+            <ul class="team__menu list">
+              <li class="team__menu-item">
+              <a href="#" class="link">
+                <svg>
+                  <use href="images/sprite/spite.svg#icon-facebook"/>
+                </svg>
+              </a>
+              </li>
+
+              <li class="team__menu-item">
+                <a href="#" class="link">
+                  <svg>
+                    <use href="images/sprite/spite.svg#icon-twitter" />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="team__menu-item">
+                <a class="social-link" href="#">
+                  <svg>
+                    <use href="images/sprite/spite.svg#icon-pinterest" />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="team__menu-item">
+                <a class="social-link" href="#">
+                  <svg>
+                    <use href="images/sprite/spite.svg#icon-instagram" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <span class="team__card--name">Matthew Dix</span><br>
+            <span class="team__card--profession">Graphic Design</span>
+          </li>
+          <li class="team__card">
+            <div class="team__wrapper-img">
+              <img
+              srcset="images/img/Team_2.jpg 380w, images/img/Team_2@2x.jpg 760w"
+              sizes="380px"
+              src="images/img/Team_2.jpg"
+              alt="image"
+              height=470>
+            </div>
+
+            <ul class="team__menu list">
+              <li class="team__menu-item">
+              <a href="#" class="link">
+                <svg>
+                  <use href="images/sprite/spite.svg#icon-facebook"/>
+                </svg>
+              </a>
+              </li>
+
+              <li class="team__menu-item">
+                <a href="#" class="link">
+                  <svg>
+                    <use href="images/sprite/spite.svg#icon-twitter" />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="team__menu-item">
+                <a href="#" class="link">
+                  <svg>
+                    <use href="images/sprite/spite.svg#icon-pinterest" />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="team__menu-item">
+                <a href="#" class="link">
+                  <svg>
+                    <use href="images/sprite/spite.svg#icon-instagram" />
+                  </svg>
+                </a>
+              </li>
+
+            </ul>
+            <span class="team__card--name">Christopher Campbell</span><br>
+            <span class="team__card--profession">Branding/UX design</span>
+          </li>
+          <li class="team__card">
+            <div class="team__wrapper-img">
+              <img
+              srcset="images/img/Team_3.jpg 380w, images/img/Team_3@2x.jpg 760w"
+              sizes="380px"
+              src="images/img/Team_3.jpg"
+              alt="image"
+              height=470>
+            </div>
+
+            <ul class="team__menu list">
+              <li class="team__menu-item">
+              <a href="#" class="link">
+                <svg>
+                  <use href="images/sprite/spite.svg#icon-facebook"/>
+                </svg>
+              </a>
+              </li>
+
+              <li class="team__menu-item">
+                <a href="#" class="link">
+                  <svg>
+                    <use href="images/sprite/spite.svg#icon-twitter" />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="team__menu-item">
+                <a href="#" class="link">
+                  <svg>
+                    <use href="images/sprite/spite.svg#icon-pinterest" />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="team__menu-item">
+                <a href="#" class="link">
+                  <svg>
+                    <use href="images/sprite/spite.svg#icon-instagram" />
+                  </svg>
+                </a>
+              </li>
+
+            </ul>
+            <span class="team__card--name">Michael Fertig </span><br>
+            <span class="team__card--profession">Branding/UX design</span>
+          </li>
+        </ul>
+
+      </section>
+
     </main>
 
-    <footer class="footer container">
-      <p class="footer__text text">© 2016 MoGo free PSD template by <span>Laaqiq</span></p>
-      <form class="footer__form" action="javascript:void(0);" method="POST">
-        <input class="footer__input main__text" type="text" placeholder="Your Email...">
-        <button class="footer__button text">Subscribe</button>
+    <footer class="footer">
+      <p class="page-footer__text">© 2016 MoGo free PSD template by <span>Laaqiq</span></p>
+      <form class="page-footer__form" action="javascript:void(0);" method="POST">
+        <input class="page-footer__input" type="text" placeholder="Your Email...">
+        <button class="page-footer__button">Subscribe</button>
       </form>
     </footer>
   </body>

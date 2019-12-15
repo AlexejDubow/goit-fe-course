@@ -1,6 +1,19 @@
-/*
- * Все паршалы импортировать в этот файл
- */
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'normalize';
+@import 'base';
 
-@import 'normalize.scss';
-@import 'base.scss';
+/* COMPONENTS */
+
+@import 'components/container';
+@import 'components/link';
+@import 'components/list';
+
+/* MAIN PAGE LAYOUT */
+
+@import 'components/header';
+@import 'components/menu';
+@import 'components/services';
+@import 'components/team';
+@import 'components/footer';
+@import 'components/media';

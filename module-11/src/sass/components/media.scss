@@ -1,0 +1,28 @@
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header {
+    background-image:
+    linear-gradient(to top, $overlay-color-start, $overlay-color-end),
+    url(images/img/BG-img@2x.jpg);
+  }
+  .card__icon--1::before {
+    content: url(../images/icon/ALARM@2x.svg);
+  }
+  .card__icon--2::before {
+    content: url(../images/icon/LINE_GRAPH@2x.svg);
+  }
+  .card__icon--3::before {
+    content: url(../images/icon/COMPUTER@2x.svg);
+  }
+  .card__icon--4::before {
+    content: url(../images/icon/BOOK@2x.svg);
+  }
+  .card__icon--5::before {
+    content: url(../images/icon/HOME@2x.svg);
+  }
+  .card__icon--6::before {
+    content: url(../images/icon/IMAGE@2x.svg);
+  }
+  [class*="card__icon--"]::before {
+    transform: translate(0, 0);
+  }
+}

@@ -1,0 +1,39 @@
+.header {
+  background-image:
+    linear-gradient(to top, $overlay-color-start, $overlay-color-end),
+    url(../images/img/BG_img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding-top: 1.75rem;
+  padding-bottom: 14.375rem;
+}
+.page__suptitle {
+  color: $header-font-color;
+  font-family: $suptitle-font;
+  font-size: 4.5rem;
+  font-weight: 400;
+  // text-align: center;
+}
+.page__title {
+  color: $header-font-color;
+  font-family: $main-font;
+  font-size: 9.375rem;
+  font-weight: 700;
+  line-height: 140px;
+  text-transform: uppercase;
+  // text-align: center;
+}
+.page__button {
+  @extend %button;
+  width: 160px;
+  color: $header-font-color;
+  font-family: $main-font;
+  font-size: .845rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 3px solid $first-bg-color;
+  background-color: transparent;
+  cursor: pointer;
+}
